@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>470</width>
-    <height>534</height>
+    <width>487</width>
+    <height>468</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
      <string>Добавить сотрудника</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_chng">
+   <widget class="QPushButton" name="btn_change">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -77,19 +77,6 @@
      <string>Получить данные</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_game">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>310</y>
-      <width>5</width>
-      <height>5</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -128,35 +115,25 @@
      <string>Кадров</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QPushButton" name="btn_changeother">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>120</y>
-      <width>141</width>
-      <height>21</height>
+      <x>170</x>
+      <y>360</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Monotype Corsiva</family>
-      <pointsize>13</pointsize>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>С нюансом</string>
+     <string>Изменить таблицы</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>470</width>
-     <height>26</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
