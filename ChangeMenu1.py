@@ -56,3 +56,8 @@ class ChangeMenu(QMainWindow):
                 event.ignore()
 
 
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = ChangeMenu()
+    ex.show()
+    sys.exit(app.exec())
