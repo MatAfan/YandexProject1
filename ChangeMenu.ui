@@ -7,8 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>646</height>
+    <height>642</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>10</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -18,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>20</y>
+      <y>60</y>
       <width>231</width>
       <height>31</height>
      </rect>
@@ -37,7 +43,7 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>20</y>
+      <y>60</y>
       <width>391</width>
       <height>31</height>
      </rect>
@@ -47,7 +53,7 @@
     <property name="geometry">
      <rect>
       <x>670</x>
-      <y>20</y>
+      <y>60</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -60,7 +66,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>60</y>
+      <y>110</y>
       <width>721</width>
       <height>411</height>
      </rect>
@@ -70,7 +76,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>520</y>
+      <y>570</y>
       <width>721</width>
       <height>31</height>
      </rect>
@@ -83,26 +89,26 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>480</y>
+      <y>530</y>
       <width>721</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Получить информацию</string>
+     <string>Получить</string>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_info">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>560</y>
+      <y>10</y>
       <width>721</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>Чтобы получить весь список нажмите сразу кнопку Искать</string>
     </property>
    </widget>
   </widget>

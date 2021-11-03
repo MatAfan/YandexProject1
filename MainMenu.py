@@ -23,3 +23,4 @@ class MainMenu(QMainWindow):
         pass
 
     def change_other_menu(self):
+        pass
