@@ -17,11 +17,16 @@ class AddMenu(QMainWindow):
             self.cbbx_family.addItem(i[0])
 
     def add(self):
+        birthday = self.ledit_Birthday.text().split('.')
+        if len(birthday) != 3:
+            return
         cur = self.con.cursor()
         name = self.ledit_Name.text()
         surname = self.ledit_Surname.text()
         sname = self.ledit_SName.text()
         kids = int(self.spbx_Kids.text())
+        floor = self.cbbx_Floor.text()
+
 
         self.con.commit()
 
