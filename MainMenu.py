@@ -16,17 +16,17 @@ class MainMenu(QMainWindow):
         pass
 
     def change_menu(self):
-        app = QApplication(sys.argv)
-        ex = ChangeMenu()
-        ex.show()
+        qqq = QApplication(sys.argv)
+        eee = ChangeMenu()
+        eee.show()
 
     def get_menu(self):
         pass
 
     def change_other_menu(self):
-        app = QApplication(sys.argv)
-        ex = AddOtherMenu()
-        ex.show()
+        qqqq = QApplication(sys.argv)
+        eeee = AddOtherMenu()
+        eeee.show()
 
 
 

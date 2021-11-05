@@ -1,5 +1,5 @@
 import sys
-import datetime
+import datetime as dt
 from docxtpl import DocxTemplate
 import sqlite3
 from PyQt5 import uic

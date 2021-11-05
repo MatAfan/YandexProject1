@@ -15,7 +15,7 @@ class ChangeMenu(QMainWindow):
 
     def update_result(self):
         cur = self.con.cursor()
-        result = cur.execute("SELECT * FROM Сотрудники WHERE Фамилия=?",
+        result = cur.execute("""SELECT * FROM Staff WHERE Surname=?""",
                              (item_id := self.txt_input.text(), )).fetchall()
         self.tableWidget.setRowCount(len(result))
         if not result:

@@ -11,7 +11,7 @@ class AddOtherMenu(QMainWindow):
 
     def add(self):
         cur = self.con.cursor()
-        result = cur.execute(f"INSERT into {cbbx_tblchoose.text()}(Значение) VALUES ('{ln_new.text()}') ")
+        result = cur.execute(f"INSERT into {cbbx_tblchoose.text()}(Value) VALUES ('{ln_new.text()}') ")
         self.con.commit()
 
 

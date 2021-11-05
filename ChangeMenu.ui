@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>642</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="font">
@@ -76,26 +76,13 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>570</y>
-      <width>721</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Изменить</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_getinfo">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
       <y>530</y>
       <width>721</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Получить</string>
+     <string>Изменить</string>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_info">

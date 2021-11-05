@@ -37,17 +37,17 @@
     </property>
     <item>
      <property name="text">
-      <string>Должность</string>
+      <string>Jobs</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Семейное положение</string>
+      <string>FamilySituation</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Образование</string>
+      <string>Study</string>
      </property>
     </item>
    </widget>
