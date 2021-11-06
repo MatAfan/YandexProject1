@@ -8,7 +8,7 @@ class ChangeMenu(QMainWindow):
         self.setWindowTitle('Изменить данные')
         self.con = sqlite3.connect(DBNAME)
         self.btn_search.clicked.connect(self.update_result)
-        self.tableWidget.itemChanged.connect(self.item_changed)
+        self.table_Main.itemChanged.connect(self.item_changed)
         self.btn_changeinfo.clicked.connect(self.save_results)
         self.modified = {}
         self.titles = None
@@ -17,16 +17,16 @@ class ChangeMenu(QMainWindow):
         cur = self.con.cursor()
         result = cur.execute("""SELECT * FROM Staff WHERE Surname=?""",
                              (item_id := self.txt_input.text(), )).fetchall()
-        self.tableWidget.setRowCount(len(result))
+        self.table_Main.setRowCount(len(result))
         if not result:
             self.statusBar().showMessage('Ничего не нашлось')
             return
 
-        self.tableWidget.setColumnCount(len(result[0]))
+        self.table_Main.setColumnCount(len(result[0]))
         self.titles = [description[0] for description in cur.description]
         for i, elem in enumerate(result):
             for j, val in enumerate(elem):
-                self.tableWidget.setItem(i, j, QTableWidgetItem(str(val)))
+                self.table_Main.setItem(i, j, QTableWidgetItem(str(val)))
         self.modified = {}
 
     def item_changed(self, item):
@@ -39,7 +39,6 @@ class ChangeMenu(QMainWindow):
             que += ", ".join([f"{key}='{self.modified.get(key)}'"
                               for key in self.modified.keys()])
             que += "WHERE id = ?"
-            print(que)
             cur.execute(que, (self.spinBox.text(),))
             self.con.commit()
             self.modified.clear()
@@ -56,8 +55,3 @@ class ChangeMenu(QMainWindow):
                 event.ignore()
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = ChangeMenu()
-    ex.show()
-    sys.exit(app.exec())

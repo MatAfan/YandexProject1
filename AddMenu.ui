@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>820</width>
-    <height>651</height>
+    <width>810</width>
+    <height>660</height>
    </rect>
   </property>
   <property name="font">
@@ -98,7 +98,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Дата приема</string>
+        <string>Дата приема (ДД.ММ.ГГГГ)</string>
        </property>
       </widget>
      </item>
@@ -183,7 +183,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Дата рождения</string>
+        <string>Дата рождения (ДД.ММ.ГГГГ)</string>
        </property>
       </widget>
      </item>
@@ -241,13 +241,17 @@
       </widget>
      </item>
      <item row="8" column="2">
-      <widget class="QSpinBox" name="spbx_Kids"/>
+      <widget class="QSpinBox" name="spbx_Kids">
+       <property name="maximum">
+        <number>1000000000</number>
+       </property>
+      </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QDateEdit" name="dt_BornIn"/>
+      <widget class="QLineEdit" name="ledit_Birthday"/>
      </item>
      <item row="9" column="2">
-      <widget class="QDateEdit" name="dateEdit_2"/>
+      <widget class="QLineEdit" name="ledit_Employment"/>
      </item>
     </layout>
    </widget>
@@ -255,13 +259,26 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>560</y>
+      <y>540</y>
       <width>771</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>590</y>
+      <width>771</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

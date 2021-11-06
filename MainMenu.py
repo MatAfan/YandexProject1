@@ -1,6 +1,7 @@
 from imports import *
 from ChangeMenu1 import *
 from AddOtherMenu import *
+from AddMenu import *
 
 
 class MainMenu(QMainWindow):
@@ -13,20 +14,28 @@ class MainMenu(QMainWindow):
         self.btn_get.clicked.connect(self.get_menu)
 
     def add_menu(self):
-        pass
+        add = QApplication(sys.argv)
+        add_ex = ChangeMenu()
+        add_ex.show()
+        print(1)
+        sys.exit(add.exec())
 
     def change_menu(self):
-        qqq = QApplication(sys.argv)
-        eee = ChangeMenu()
-        eee.show()
+        change = QApplication(sys.argv)
+        change_ex = ChangeMenu()
+        change_ex.show()
+        print(2)
+        sys.exit(change.exec())
 
     def get_menu(self):
         pass
 
     def change_other_menu(self):
-        qqqq = QApplication(sys.argv)
-        eeee = AddOtherMenu()
-        eeee.show()
+        change_other = QApplication(sys.argv)
+        change_other_ex = AddOtherMenu()
+        change_other_ex.show()
+        print(3)
+        sys.exit(change_other.exec())
 
 
 
