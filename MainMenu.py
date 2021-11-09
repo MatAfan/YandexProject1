@@ -25,13 +25,18 @@ class MainMenu(QMainWindow):
     def get_menu(self):
         get_ex = GetMenu()
         get_ex.show()
+        
     def change_other_menu(self):
         change_other_ex = AddOtherMenu()
         change_other_ex.show()
 
 
+def except_hook(cls, exception, traceback):
+    sys.__excepthook__(cls, exception, traceback)
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = MainMenu()
-    ex.show()
+    form = MainMenu()
+    form.show()
+    sys.excepthook = except_hook
     sys.exit(app.exec())

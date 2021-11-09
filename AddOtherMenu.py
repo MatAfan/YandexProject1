@@ -5,7 +5,7 @@ class AddOtherMenu(QWidget):
     def __init__(self):
         super().__init__()
         self.con = sqlite3.connect(DBNAME)
-        uic.loadUi("AddOtherMenu.ui", self)
+        uic.loadUi("AddOtherMenu2.ui", self)
         self.setWindowTitle('Добавить значение')
         self.btn_add.clicked.connect(self.add)
 

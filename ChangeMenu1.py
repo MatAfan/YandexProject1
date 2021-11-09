@@ -4,7 +4,7 @@ from imports import *
 class ChangeMenu(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi("ChangeMenu.ui", self)
+        uic.loadUi("ChangeMenu2.ui", self)
         self.setWindowTitle('Изменить данные')
         self.con = sqlite3.connect(DBNAME)
         self.cur = self.con.cursor()

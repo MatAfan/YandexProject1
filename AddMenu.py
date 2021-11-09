@@ -6,7 +6,7 @@ class AddMenu(QWidget):
         super().__init__()
         self.con = sqlite3.connect(DBNAME)
         self.cur = self.con.cursor()
-        uic.loadUi("AddMenu.ui", self)
+        uic.loadUi("AddMenu2.ui", self)
         self.setWindowTitle('Добавить значение')
         self.btn_add.clicked.connect(self.add)
         for i in self.cur.execute('SELECT Value from Study').fetchall():
