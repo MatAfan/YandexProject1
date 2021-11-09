@@ -13,6 +13,7 @@ class MainMenu(QMainWindow):
         self.btn_add.clicked.connect(self.add_menu)
         self.btn_change.clicked.connect(self.change_menu)
         self.btn_get.clicked.connect(self.get_menu)
+        self.btn_changeother.clicked.connect(self.change_other_menu)
 
     def add_menu(self):
         add_ex = AddMenu()
@@ -25,7 +26,7 @@ class MainMenu(QMainWindow):
     def get_menu(self):
         get_ex = GetMenu()
         get_ex.show()
-        
+
     def change_other_menu(self):
         change_other_ex = AddOtherMenu()
         change_other_ex.show()
